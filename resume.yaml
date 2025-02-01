@@ -1,0 +1,83 @@
+experience:
+- job_title: Machine Learning Engineer II
+  company: Principal Financial Group
+  date: Apr 2022 -- Present
+  location: Des Moines, IA
+  bullets:
+  - Designed and implemented a scalable MLOps pipeline using AWS SageMaker, Lambda, and S3, automating model training, deployment, and monitoring, reducing manual intervention  
+  - Integrated real-time model monitoring tools (SageMaker Model Monitor, CloudWatch) to detect bias, data drift, and performance degradation, enabling automated retraining and rollback strategies  
+  - Built and maintained CI/CD pipelines for model training and deployment using GitHub Actions and AWS CDK, automating workflows and increasing deployment speed  
+  - Designed and implemented a versioned model management system, ensuring reproducibility, auditing, and risk mitigation for ML models in production  
+  - Developed and optimized large-scale data processing pipelines with Spark, enhancing machine learning feature engineering workflows  
+  - Led model deployment and optimization efforts, hosting 14 production models, driving \$6M+ in revenue within months of release  
+  - this bullet should show up in my CV.yaml
+  - Mentored junior engineers, improving best practices in model deployment, versioning, and monitoring
+  - new line
+
+- job_title: Data Engineer I  
+  company: Principal Financial Group  
+  date: Jul 2021 -- Apr 2022  
+  location: Des Moines, IA  
+  bullets:  
+  - Developed and optimized complex PySpark jobs to efficiently join and transform large-scale datasets, tailoring data outputs to meet business needs  
+  - Managed and maintained 50+ data pipelines, ingesting data from multiple sources through various methods, ensuring high availability and reliability  
+  - Implemented Infrastructure as Code (IaC) for data pipelines using AWS CDK, improving maintainability and deployment consistency  
+  - Built and maintained scalable data pipelines, ensuring real-time data availability for machine learning models  
+  - Reduced onboarding time from 3+ months to 1 week by implementing automated data pipeline documentation and validation  
+
+- job_title: Data Engineer Intern  
+  company: Principal Financial Group  
+  date: May 2020 -- May 2021  
+  location: Des Moines, IA  
+  bullets:  
+  - Implemented a data mocking tool to generate synthetic datasets for lower environments, enabling realistic testing and validation of machine learning models  
+  - Developed ETL pipelines on AWS infrastructure to populate a data warehouse from multiple sources  
+  - Implemented a tool using KNN and text analytics to assess data quality, facilitating data cleanup efforts  
+  - Built cloud-based solutions to deliver actionable insights to sales teams, contributing to business growth  
+
+skills:  
+- area: Languages  
+  bullets:  
+  - Python  
+  - SQL  
+  - R  
+  - Rust  
+  - Bash  
+
+- area: AWS Infrastructure  
+  bullets:  
+  - SageMaker  
+  - Lambda  
+  - API Gateway  
+  - S3  
+  - DynamoDB  
+  - RDS  
+  - Athena  
+  - Glue  
+  - IAM  
+  - CloudFormation  
+  - AWS CDK  
+
+- area: MLOps  
+  bullets:  
+  - SageMaker Pipelines  
+  - MLFlow  
+
+- area: Data Processing  
+  bullets:  
+  - Spark  
+  - Pandas  
+  - Polars  
+  - NumPy  
+
+- area: Model Deployment and Monitoring  
+  bullets:  
+  - SageMaker Model Monitor  
+  - CloudWatch  
+  - CI/CD Pipelines  
+
+- area: CI/CD  
+  bullets:  
+  - GitHub Actions  
+  - AWS CDK  
+  - CloudFormation  

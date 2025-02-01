@@ -1,0 +1,11 @@
+[project]
+name = "dagger-resume"
+version = "1.0.0"
+
+dependencies = [
+    "dagger-io",
+    "ruamel-yaml",
+]
+
+[tool.mise]
+python = "3.13"

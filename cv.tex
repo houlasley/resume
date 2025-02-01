@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\usepackage[sfdefault]{roboto}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Louis Hasley} \\ \vspace{1pt}
+    \small 319-360-0125 $|$ \href{mailto:louiemhasley@gmail.com}{\underline{louiemhasley@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/louis-hasley}{\underline{LinkedIn}} $|$
+    %\href{https://github.com/houlasley}{\underline{GitHub}}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, SQL, PySpark, R, TypeScript, Rust, Bash \\
+     \textbf{Cloud \& Infrastructure:} AWS (Lambda, API Gateway, S3, Athena, Glue, DynamoDB, RDS, SageMaker, Step Functions, IAM, Cognito, Route 53, CloudFront, AWS CDK, CloudFormation) \\
+     \textbf{Machine Learning Frameworks:} PyTorch, scikit-learn, XGBoost\\
+     \textbf{Data Processing:} Spark, Pandas, Polars, NumPy \\
+     \textbf{Developer Tools:} Git, Docker, Podman, PyCharm, Neovim \\
+     \textbf{DevOps \& CI/CD:} GitHub Actions, AWS CDK, CloudFormation, Dagger.io
+
+    }}
+ \end{itemize}
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Learning Engineer}{Apr 2022 -- Present}
+      {Principal Financial Group}{Des Moines, IA}
+      \resumeItemListStart
+	\resumeItem{Developed a machine learning pipeline using AWS SageMaker, Lambda, and S3 to streamline model development, training, and deployment processes for data scientists}
+	\resumeItem{Deployed and hosted 14 models, driving \$6 million in gross sales within months of release}
+	\resumeItem{Maintained the high quality of deployed models through the implementation of model monitoring techniques, effectively detecting and mitigating bias, data drift, model drift, and other potential issues}
+	\resumeItem{Integrated machine learning models into production data workflows, enhancing predictive capabilities and business decision-making}
+	\resumeItem{Designed and implemented a versioned model management system, ensuring that each trained model follows a versioned data processing and inference pipeline, allowing seamless rollback to previous versions for reproducibility, auditing, and risk mitigation}
+	\resumeItem{Built automated model retraining workflows, ensuring deployed models adapt to evolving business data patterns}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+	{Data Engineer I}{Jul 2021 - Apr 2022}
+	{Principal Financial Group}{Des Moines, IA}
+      \resumeItemListStart
+	\resumeItem{Implemented a data mocking tool to generate synthetic datasets for lower environments, enabling realistic testing and validation of machine learning models and data pipelines without exposing sensitive production data}
+	\resumeItem{Managed and maintained 30+ diverse data pipelines, ingesting data from multiple sources through various methods, ensuring high availability, reliability, and seamless access for business users}
+	\resumeItem{Developed and optimized complex PySpark jobs to efficiently join and transform large-scale datasets, tailoring data outputs to meet specific business requirements and drive informed decision-making}
+	\resumeItem{Led discussions on problem formulation and translated business requirements into technical solutions}
+	\resumeItem{Reduced onboarding time from 3+ months to 1 week, resulting in minimal onboarding costs and a significantly better engineer experience}
+    \resumeItemListEnd
+
+    \resumeSubheading
+	{Data Engineering Intern}{May 2020 -- May 2021}
+	{Principal Financial Group}{Des Moines, IA}
+      \resumeItemListStart
+	\resumeItem{Leveraged cloud-based solutions to deliver actionable insights to sales team, contributing to business growth}
+	\resumeItem{Analyzed customer behavior to determine which kinds of interactions have the highest probability of leading to a sale using a recursive neural network and statistics.}
+	\resumeItem{Developed ETL pipelines on AWS infrastructure to a populate data warehouse from multiple sources}
+	\resumeItem{Implemented tool using KNN and text analytics to assess data quality, facilitating data cleanup efforts}
+	\resumeItem{Explored new methods and technologies that helped our team operate more efficiently while also teaching senior engineers new techniques}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Iowa}{Iowa City, IA}
+      {MS in Business Analytics}{May 2021}
+    \resumeSubSubheading
+      {BBA in Business Analytics}{May 2020}
+    \resumeSubSubheading
+      {BBA in Finance}{May 2020}
+  \resumeSubHeadingListEnd
+
+\end{document}

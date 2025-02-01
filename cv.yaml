@@ -1,0 +1,121 @@
+experience:
+- bullets:
+  - Designed and implemented a scalable MLOps pipeline using AWS SageMaker, Lambda, and S3, automating model training, deployment, and monitoring, reducing manual intervention
+  - Deployed and hosted 14 models, driving \$6 million in gross sales within months of release
+  - Integrated real-time model monitoring tools (SageMaker Model Monitor, CloudWatch) to detect bias, data drift, and performance degradation, enabling automated retraining and rollback strategies  
+  - Integrated machine learning models into production data workflows, enhancing predictive capabilities and business decision-making
+  - Designed and implemented a versioned model management system, ensuring that each trained model follows a versioned data processing and inference pipeline, allowing seamless rollback to previous versions for reproducibility, auditing, and risk mitigation
+  - Built automated model retraining workflows, ensuring deployed models adapt to evolving business data patterns
+  - Deployed and hosted 14 production models, driving \$6 million in gross sales within months of release
+  - Developed real-time model monitoring using SageMaker Model Monitor and CloudWatch, detecting bias, data drift, and performance degradation, enabling automated retraining and rollback strategies
+  - Integrated machine learning models into production APIs, enhancing predictive capabilities and enabling seamless decision-making across business applications
+  - Designed and deployed an end-to-end MLOps pipeline on AWS (SageMaker, Lambda, S3), reducing manual intervention and improving model deployment efficiency
+  - Managed CI/CD pipelines for model training and deployment using GitHub Actions, automating workflows and increasing deployment speed
+  - Built and monitored real-time model performance dashboards using CloudWatch, detecting bias and drift to ensure continuous model reliability
+  - Led model deployment and optimization efforts, hosting 14 models in production, driving \$6M+ in revenue within months of release
+  - Implemented infrastructure as code (IaC) with AWS CDK, reducing environment setup time and ensuring reproducibility
+  - Designed and implemented a versioned model management system, ensuring that each trained model follows a versioned data processing and inference pipeline, allowing seamless rollback for reproducibility, auditing, and risk mitigation
+  - Mentored junior engineers, improving best practices in model deployment, versioning, and monitoring
+  - Built and maintained CI/CD pipelines for model training and deployment using GitHub Actions and AWS CDK, automating workflows and increasing deployment speed
+  - Designed and implemented a versioned model management system, ensuring reproducibility, auditing, and risk mitigation for ML models in production
+  - Developed and optimized large-scale data processing pipelines using Spark and Pandas, enhancing machine learning feature engineering workflows
+  - Led model deployment and optimization efforts, hosting 14 production models, driving \$6M+ in revenue within months of release
+  - Implemented Infrastructure as Code (IaC) using AWS CDK and CloudFormation, reducing environment setup time and ensuring reproducibility
+  - Developed and optimized large-scale data processing pipelines with Spark, enhancing machine learning feature engineering workflows
+  - this bullet should show up in my CV.yaml
+  - new line
+  company: Principal Financial Group
+  date: Apr 2022 -- Present
+  job_title: Machine Learning Engineer II
+  location: Des Moines, IA
+- bullets:
+  - Implemented a data mocking tool to generate synthetic datasets for lower environments, enabling realistic testing and validation of machine learning models and data pipelines without exposing sensitive production data
+  - Managed and maintained 30+ diverse data pipelines, ingesting data from multiple sources through various methods, ensuring high availability, reliability, and seamless access for business users
+  - Developed and optimized complex PySpark jobs to efficiently join and transform large-scale datasets, tailoring data outputs to meet specific business requirements and drive informed decision making
+  - Reduced onboarding time from 3+ months to 1 week, resulting in minimal onboarding costs and a significantly better engineer experience
+  - Led discussions on problem formulation and translated business requirements into technical solutions
+  - Built and maintained scalable data pipelines, ensuring real-time data availability for machine learning models
+  - Implemented Infrastructure as Code (IaC) for data pipelines using AWS CDK
+  - Developed and optimized complex PySpark jobs to efficiently join and transform large-scale datasets, tailoring data outputs to meet specific business requirements and drive informed decision-making
+  - Managed and maintained 50+ diverse data pipelines, ingesting data from multiple sources through various methods, ensuring high availability, reliability, and seamless access for business users
+  - Developed and optimized complex PySpark jobs to efficiently join and transform large-scale datasets, tailoring data outputs to meet business needs
+  - Managed and maintained 50+ data pipelines, ingesting data from multiple sources through various methods, ensuring high availability and reliability
+  - Implemented Infrastructure as Code (IaC) for data pipelines using AWS CDK, improving maintainability and deployment consistency
+  - Reduced onboarding time from 3+ months to 1 week by implementing automated data pipeline documentation and validation
+  company: Principal Financial Group
+  date: Jul 2021 -- Apr 2022
+  job_title: Data Engineer I
+  location: Des Moines, IA
+- bullets:
+  - Leveraged cloud-based solutions to deliver actionable insights to sales team, contributing to business growth
+  - Analyzed customer behavior to determine which kinds of interactions have the highest probability of leading to a sale using a recursive neural network and statistics
+  - Implemented tool using KNN and text analytics to assess data quality, facilitating data cleanup efforts
+  - Developed ETL pipelines on AWS infrastructure to a populate data warehouse from multiple sources
+  - Explored new methods and technologies that helped our team operate more efficiently while also teaching senior engineers new techniques
+  - Leveraged cloud-based solutions to deliver actionable insights to sales teams, contributing to business growth
+  - Implemented a tool using KNN and text analytics to assess data quality, facilitating data cleanup efforts
+  - Developed ETL pipelines on AWS infrastructure to populate a data warehouse from multiple sources
+  - Implemented a data mocking tool to generate synthetic datasets for lower environments, enabling realistic testing and validation of machine learning models and data pipelines without exposing sensitive production data
+  - Implemented a data mocking tool to generate synthetic datasets for lower environments, enabling realistic testing and validation of machine learning models
+  - Built cloud-based solutions to deliver actionable insights to sales teams, contributing to business growth
+  company: Principal Financial Group
+  date: May 2020 -- May 2021
+  job_title: Data Engineer Intern
+  location: Des Moines, IA
+skills:
+- area: Languages
+  bullets:
+  - Python
+  - SQL
+  - R
+  - TypeScript
+  - Rust
+  - Bash
+- area: AWS Infrastructure
+  bullets:
+  - Lambda
+  - API Gateway
+  - S3
+  - Athena
+  - Glue
+  - DynamoDB
+  - RDS
+  - SageMaker
+  - Step Functions
+  - IAM
+  - Cognito
+  - Route 53
+  - CloudFront
+  - AWS CDK
+  - CloudFormatio
+  - CloudFormation
+- area: MLOps
+  bullets:
+  - SageMaker Pipelines
+  - MLFlow
+- area: Data Processing
+  bullets:
+  - Spark
+  - Pandas
+  - Polars
+  - NumPy
+- area: Developer Tools
+  bullets:
+  - Git
+  - Docker
+  - Podman
+  - PyCharm
+  - Neovim
+- area: CI/CD
+  bullets:
+  - GitHub Actions
+  - AWS CDK
+  - CloudFormation
+  - Dagger.io
+- area: Model Deployment and Monitoring
+  bullets:
+  - SageMaker
+  - CloudWatch
+  - Model Monitor
+  - SageMaker Model Monitor
+  - CI/CD Pipelines
