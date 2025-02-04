@@ -3,6 +3,9 @@ from ruamel.yaml.representer import RoundTripRepresenter
 from pathlib import Path
 
 
+yaml = YAML()
+
+
 def write_formatting(f):
     f.write("""
             \\documentclass[letterpaper,11pt]{article}
@@ -170,17 +173,7 @@ def write_footer(f):
 def load_yaml(file):
     """Load YAML file."""
     with open(file, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-
-class SingleLineDumper(yaml.Dumper):
-    """Custom YAML Dumper to ensure list items remain single-line without quotes."""
-
-    def represent_scalar(self, tag, value, style=None):
-        if isinstance(value, str) and "\n" in value:
-            value = value.replace("\n", " ")  # Convert newlines to spaces
-            style = None  # Forces plain text (no quotes)
-        return super().represent_scalar(tag, value, style)
+        return yaml.load(f)
 
 
 def repr_str(dumper: RoundTripRepresenter, data: str):
@@ -189,14 +182,13 @@ def repr_str(dumper: RoundTripRepresenter, data: str):
     return dumper.represent_scalar("tag:yaml.org,2002:str", data)
 
 
-newyaml = YAML()
-newyaml.representer.add_representer(str, repr_str)
+yaml.representer.add_representer(str, repr_str)
 
 
 def save_yaml(filename, data):
     """Save YAML ensuring all list items remain single-line."""
     with open(filename, "w") as file:
-        newyaml.dump(
+        yaml.dump(
             data, file, default_flow_style=False, allow_unicode=True, sort_keys=False
         )
 
